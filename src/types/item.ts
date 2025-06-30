@@ -1,0 +1,21 @@
+export type Item = {
+  date: string;
+  quantity: number;
+  barcode: number; 
+	brand: string; 
+	category: string; 
+	discount: string; 
+	in_way_from_client: number;
+	in_way_to_client: number;
+	is_realization: boolean;
+	is_supply: boolean;
+	last_change_date: string;
+	nm_id: number;
+	price: string;
+	quantity_full: number;
+	sc_code: number;
+	subject: string;
+	supplier_article: string;
+	tech_size: string;
+	warehouse_name: string;
+};

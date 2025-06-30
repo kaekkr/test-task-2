@@ -20,8 +20,9 @@ import { ref, computed } from 'vue';
 import { fetchData } from '../services/api';
 import ChartBlock from '../components/ChartBlock.vue';
 import DataTable from '../components/DataTable.vue';
+import { Item } from '../types/item';
 
-const items = ref([]);
+const items = ref<Item[]>([]);
 const page = ref(1);
 const today = new Date().toISOString().slice(0, 10);
 const rawDate = ref(today);

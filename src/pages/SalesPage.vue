@@ -21,8 +21,9 @@ import { ref, computed } from 'vue';
 import { fetchData } from '../services/api';
 import ChartBlock from '../components/ChartBlock.vue';
 import DataTable from '../components/DataTable.vue';
+import { Item } from '../types/item';
 
-const items = ref([]);
+const items = ref<Item[]>([]);
 const page = ref(1);
 const dateFrom = ref('2025-01-01');
 const dateTo = ref('2025-12-31');
@@ -34,6 +35,7 @@ const loadData = async () => {
     page: page.value,
     limit: 50,
   });
+	console.log(response.data)
   items.value = response.data || [];
 };
 

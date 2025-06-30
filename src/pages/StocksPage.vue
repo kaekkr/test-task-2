@@ -20,7 +20,7 @@ import { ref, computed } from 'vue';
 import { fetchData } from '../services/api';
 import ChartBlock from '../components/ChartBlock.vue';
 import DataTable from '../components/DataTable.vue';
-import { Item } from '../types/item';
+import type { Item } from '../types/item';
 
 const items = ref<Item[]>([]);
 const page = ref(1);
